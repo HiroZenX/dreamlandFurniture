@@ -1,0 +1,444 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dreamland Furniture</title>
+    <link rel="stylesheet" href="./assets/css/main.css">
+    <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+    <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
+    <link rel="shortcut icon" href="./assets/images/favicon.ico" type="image/x-icon">
+    <meta name="description"
+        content="Find quality furniture at Dreamland Furniture, based in Geelong, Melbourne, Australia. We offer a wide range of sofas, couches, lounges and dining room tables built to international standards. Order your dream furniture today!">
+    <meta name="keywords" content="furniture, sofas, couches, lounges, dining room tables, Geelong, Melbourne, Australia, best furniture store in geelong, furniture near melbourne, furniture stores in geelong">
+    <meta name="robots" content="index, follow">
+    <meta property="og:title" content="Dreamland Furniture - Quality Sofas, Couches, Lounges and Dining Room Tables in Geelong, Melbourne, Australia">
+    <meta property="og:description" content="Find quality furniture at Dreamland Furniture, based in Geelong, Melbourne, Australia. We offer a wide range of sofas, couches, lounges and dining room tables built to international standards. Order your dream furniture today!">
+
+</head>
+<body>
+    <!--=============== HEADER ===============-->
+    <header class="header" id="header">
+        <nav class="nav container">
+            <a href="#home" class="nav-logo"><img src="./assets/images/Dreamland LOGO png.png   " class="nav-logo-img">Dreamland Furniture</a>
+            <div class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li class="nav-item"><a href="#collection" class="nav-link">Collection</a></li>
+                    <li class="nav-item"><a href="#company" class="nav-link">Furniture</a></li>
+                    <li class="nav-item"><a href="#store" class="nav-link">Store</a></li>
+                    <li class="nav-item"><a href="#contact" class="nav-link">Contact Us</a></li>
+                </ul>
+                <div class="nav-close" id="nav-close"><i class="bx bx-x"></i></div>
+            </div>
+            <div class="nav-toggle" id="nav-toggle"><i class='bx bx-align-right'></i></div>
+        </nav>
+    </header>
+
+    <!--=============== MAIN ===============-->
+    <main class="main">
+        <section class="home section" id="home">
+            <div class="home-container container">
+                <h1 class="home-title">The best collection of <br> Furniture is here</h1>
+                <div class="home-icons">
+                    <p class="home-desc">
+                        Discover an array of luxurious sofas, couches, lounges, and dining tables that meet global quality standards. Our
+                        furniture is built to last, making it a great investment for your home. Don't miss out on your chance to own your dream
+                        sofa or dining table today.</p>
+                    <a href="#collection"><i class='bx bx-down-arrow-alt change-theme home-theme'></i></a>
+                </div>
+            </div>
+        </section>
+
+        <!--=============== COLLECTION ===============-->
+        <section class="collection section" id="collection">
+            <div class="collection-container container">
+
+                <div class="collection-data">
+                    <h1 class="collection-title">Why should <span class="span">you choose our product?</span></h1>
+                </div>
+                
+                <ul class="collection-list grid">
+                    <li>
+                        <div class="collection-card">
+                            <div class="card-icon">
+                                <i class='bx bxs-badge-check change-theme collection-theme'></i>
+                            </div>
+                            <div>
+                                <h3 class="collection-list-title">Best Quality</h3>
+                                <p class="collection-list-desc">We always prioritize customer satisfaction over everything.</p>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="collection-card">
+                            <div class="card-icon">
+                                <i class='bx bxs-plane-alt change-theme collection-theme'></i>
+                            </div>
+                            <div>
+                                <h3 class="collection-list-title">International standard</h3>
+                                <p class="collection-list-desc">We already have international standards, and we often import abroad.</p>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!--=============== COMPANY ===============-->
+        <section class="company section" id="company">
+
+           <div class="filters container" style="user-select: none;">
+                <button class="filter-options active" onclick="scrollToDiv('bed')">Beds</button>
+                <button class="filter-options" onclick="scrollToDiv('dining')">Dining Tables</button>
+                <button class="filter-options" onclick="scrollToDiv('sofa')">Sofas</button>
+                
+           </div>
+
+           <div class="company-container container" >
+
+                <div id="myModal" class="modal">
+                    <span class="close" onclick="closeModal()">&times;</span>
+                    <div class="modal-content">
+                        <img id="modalImg">
+                        <div class="btns">
+                            <button class="prev-btn">&laquo;</button>
+                            <button class="next-btn">&raquo;</button>
+                        </div>
+                    </div>
+                </div>
+
+                <ul class="has-scrollbar">
+                    <!--1st-->
+                    <li class="scrollbar-item" id="bed">
+                        <div class="company-card">
+                            <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                                <img src="./assets/images/bed-1.jpeg" onclick="openModal('./assets/images/bed-1.jpeg')" width="500" height="600" alt="Armless chair" class="img-cover">
+                            </figure>
+                        </div>
+
+
+
+                    </li>
+                    <!--2nd-->
+                    <li class="scrollbar-item">
+                        <div class="company-card">
+                            <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                                <img src="./assets/images/bed-2.jpeg" width="500" height="600" alt="Wooden chair" onclick="openModal('./assets/images/bed-2.jpeg')" class="img-cover">
+                            </figure>
+                        </div>
+                    </li>
+                    <!--3rd-->
+                    <li class="scrollbar-item">
+                        <div class="company-card">
+                            <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                                <img src="./assets/images/bed-3.jpeg" width="500" height="600" alt="Armchair"  onclick="openModal('./assets/images/bed-3.jpeg')" class="img-cover">
+                            </figure>
+                        </div>
+                    </li>
+                    <!--4th-->
+                    <li class="scrollbar-item">
+                        <div class="company-card">
+                            <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                                <img src="./assets/images/bed-4.jpeg" width="500" height="600" alt="Armchair"
+                                    onclick="openModal('./assets/images/bed-4.jpeg')" class="img-cover">
+                            </figure>
+                        </div>
+                    </li>
+                    <!--5th-->
+                    <li class="scrollbar-item">
+                        <div class="company-card">
+                            <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                                <img src="./assets/images/bed-5.jpeg" width="500" height="600" alt="Armchair"
+                                    onclick="openModal('./assets/images/bed-5.jpeg')" class="img-cover">
+                            </figure>
+                        </div>
+                    </li>
+                    <!--6th-->
+                    <li class="scrollbar-item">
+                        <div class="company-card">
+                            <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                                <img src="./assets/images/bed-6.jpeg" width="500" height="600" alt="Armchair"
+                                    onclick="openModal('./assets/images/bed-6.jpeg')" class="img-cover">
+                            </figure>
+                        </div>
+                    </li>
+
+                    <li class="scrollbar-item" id="dining">
+                        <div class="company-card">
+                            <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                                <img src="./assets/images/dining-1.jpeg" width="500" height="600" alt="Armchair"
+                                    onclick="openModal('./assets/images/dining-1.jpeg')" class="img-cover">
+                            </figure>
+                        </div>
+                    </li>
+
+                    <li class="scrollbar-item">
+                        <div class="company-card">
+                            <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                                <img src="./assets/images/dining-2.jpeg" width="500" height="600" alt="Armchair"
+                                    onclick="openModal('./assets/images/dining-2.jpeg')" class="img-cover">
+                            </figure>
+                        </div>
+                    </li>
+                    
+                    <li class="scrollbar-item">
+                        <div class="company-card">
+                            <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                                <img src="./assets/images/dining-3.jpeg" width="500" height="600" alt="Armchair"
+                                    onclick="openModal('./assets/images/dining-3.jpeg')" class="img-cover">
+                            </figure>
+                        </div>
+                    </li>
+
+                    <li class="scrollbar-item" id="sofa">
+                        <div class="company-card">
+                            <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                                <img src="./assets/images/sofa-1.jpeg" width="500" height="600" alt="Armchair"
+                                    onclick="openModal('./assets/images/sofa-1.jpeg')" class="img-cover">
+                            </figure>
+                        </div>
+                    </li>
+                    <li class="scrollbar-item">
+                        <div class="company-card">
+                            <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                                <img src="./assets/images/sofa-2.jpeg" width="500" height="600" alt="Armchair"
+                                    onclick="openModal('./assets/images/sofa-2.jpeg')" class="img-cover">
+                            </figure>
+                        </div>
+                    </li>
+                    <li class="scrollbar-item">
+                        <div class="company-card">
+                            <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                                <img src="./assets/images/sofa-3.jpeg" width="500" height="600" alt="Armchair"
+                                    onclick="openModal('./assets/images/sofa-3.jpeg')" class="img-cover">
+                            </figure>
+                        </div>
+                    </li>
+                    <li class="scrollbar-item">
+                        <div class="company-card">
+                            <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                                <img src="./assets/images/sofa-4.jpeg" width="500" height="600" alt="Armchair"
+                                    onclick="openModal('./assets/images/sofa-4.jpeg')" class="img-cover">
+                            </figure>
+                        </div>
+                    </li>
+                    <li class="scrollbar-item">
+                        <div class="company-card">
+                            <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                                <img src="./assets/images/sofa-5.jpeg" width="500" height="600" alt="Armchair"
+                                    onclick="openModal('./assets/images/sofa-5.jpeg')" class="img-cover">
+                            </figure>
+                        </div>
+                    </li>
+                    <li class="scrollbar-item">
+                        <div class="company-card">
+                            <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                                <img src="./assets/images/sofa-6.jpeg" width="500" height="600" alt="Armchair"
+                                    onclick="openModal('./assets/images/sofa-6.jpeg')" class="img-cover">
+                            </figure>
+                        </div>
+                    </li>
+                    <li class="scrollbar-item">
+                        <div class="company-card">
+                            <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                                <img src="./assets/images/sofa-7.jpeg" width="500" height="600" alt="Armchair"
+                                    onclick="openModal('./assets/images/sofa-7.jpeg')" class="img-cover">
+                            </figure>
+                        </div>
+                    </li>
+                    <li class="scrollbar-item">
+                        <div class="company-card">
+                            <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                                <img src="./assets/images/sofa-8.jpeg" width="500" height="600" alt="Armchair"
+                                    onclick="openModal('./assets/images/sofa-8.jpeg')" class="img-cover">
+                            </figure>
+                        </div>
+                    </li>
+                    <li class="scrollbar-item">
+                        <div class="company-card">
+                            <figure class="card-banner img-holder" style="--width: 500; --height: 600;">
+                                <img src="./assets/images/sofa-9.jpeg" width="500" height="600" alt="Armchair"
+                                    onclick="openModal('./assets/images/sofa-9.jpeg')" class="img-cover">
+                            </figure>
+                        </div>
+                    </li>
+                </ul>
+
+                <div class="hallmark">
+                    <h3 class="hallmark-title">Accuracy and Quality is our Hallmark</h3>
+                    <p class="hallmark-desc">Our products are often made with high-quality materials and are designed and manufactured with attention to detail. It may also come with a warranty or guarantee, providing our consumer with confidence in its durability and performance.</p>
+                </div>
+           </div>
+        </section>
+
+        <!--=============== STORE ===============-->
+        <section class="store" id="store">
+
+            <div class="title-wrapper section container">
+                <h1 class="store-title">New Products</span></h1>
+                <p class="store-desc">This beautifully crafted piece of furniture will add a touch of elegance and sophistication to any room.</p>
+            </div>
+
+            <ul class="store-list">
+                <!--1st-->
+                <li>
+                    <div class="store-card has-bg-image has-after" style="background-image: url('./assets/images/sofa-2.jpeg')">
+                        <div class="store-content">
+                            <div>
+                                <p class="store-content-desc">Type</p>
+                                <h3 class="store-content-title">Sectional Sofa</h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!--2nd-->
+                <li>
+                    <div class="store-card has-bg-image has-after" style="background-image: url('./assets/images/bed-4.jpeg')">
+                        <div class="store-content">
+                            <div>
+                                <p class="store-content-desc">Type</p>
+                                <h3 class="store-content-title">Dreamscape Bed</h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!--3rd-->
+                <li>
+                    <div class="store-card has-bg-image has-after" style="background-image: url('./assets/images/bed-1.jpeg')">
+                        <div class="store-content">
+                            <div>
+                                <p class="store-content-desc">Type</p>
+                                <h3 class="store-content-title">Blaze Bed</h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+                <!--4th-->
+                <li>
+                    <div class="store-card has-bg-image has-after" style="background-image: url('./assets/images/dining-1.jpeg')">
+                        <div class="store-content">
+                            <div>
+                                <p class="store-content-desc">Type</p>
+                                <h3 class="store-content-title">Dining</h3>
+                            </div>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </section>
+
+        <!--=============== CONTACT ===============-->
+        <section class="contact section container">
+            <h2 class="section-title">What our happy <br> customers say</h2>
+            <p class="section-subtitle">Get to know what people say about our products.</p>
+
+            <div class="contact-container swiper">
+                <div class="swiper-wrapper">
+                    <article class="contact-card swiper-slide">
+                        <i class='bx bxs-quote-left contact-theme'></i>
+                        <p class="contact-message">I recently moved into a new apartment and needed to furnish the entire space. This store had everything I needed - from
+                        the living room to the bedroom to the dining area. The staff was knowledgeable and helped me find the perfect pieces to
+                        fit my style and budget.</p>
+                        <h3 class="contact-title">Sarah Johnson</h3>
+                        <span class="contact-span">Customer</span>
+                    </article>
+                    <article class="contact-card swiper-slide">
+                        <i class='bx bxs-quote-left contact-theme'></i>
+                        <p class="contact-message">I bought a dining table and chairs from this store and I couldn't be happier with my purchase. The furniture is
+                        well-made and stylish, and the delivery was on time and hassle-free. I will definitely come back for more!</p>
+                        <h3 class="contact-title">Michael Williams</h3>
+                        <span class="contact-span">Customer</span>
+                    </article>
+                    <article class="contact-card swiper-slide">
+                        <i class='bx bxs-quote-left contact-theme'></i>
+                        <p class="contact-message">I was a little skeptical about buying furniture online, but this store exceeded my expectations. I got a beautiful bed
+                        at a very reasonable price and the customer support team was very helpful throughout the process. Would definitely
+                        recommend to anyone looking for quality furniture at affordable prices.</p>
+                        <h3 class="contact-title">David Lee</h3>
+                        <span class="contact-span">Customer</span>
+                    </article>
+                    <article class="contact-card swiper-slide">
+                        <i class='bx bxs-quote-left contact-theme'></i>
+                        <p class="contact-message">I recently purchased this product and was blown away by its quality and effectiveness. It is well-designed, reliable, and has exceeded my expectations in every way. The customer service provided by the company was also outstanding, and I would highly recommend this product to others.</p>
+                        <h3 class="contact-title">Jessica Anderson</h3>
+                        <span class="contact-span">Customer</span>
+                    </article>
+                </div>
+                <div class="swiper-button-next"><i class='bx bx-right-arrow-alt'></i></div>
+                <div class="swiper-button-prev"><i class='bx bx-left-arrow-alt'></i></div>
+            </div>
+        </section>
+
+
+        <div class="contact-us" id="contact">
+            <div class="con-section">
+                <div class="tagline">
+                    <a href="#"><img src="./assets/images/Final.png" alt=""></a>
+                    <p>"Discover the Art of Comfort at Dreamland Furniture - Where Quality Meets Style"</p>
+                </div>
+
+                <div class="con-contact-info">
+                    <div class="cci-details">
+                        <h2>Contact us at : <a href="tel:+61 416 463 221">+61 416 463 221</a></h2>
+                        <h2>Email us at : <a href="mailto:info@dreamlandfurniture.com">info@dreamlandfurniture.com</a></h2>
+                    </div>
+                    <div class="cci-address">
+                        <h2>Visit our store :</h2>
+                        <p>1/9 DENDLE STREET, GROVEDALE, GEELONG,<bR>
+                        VIC 3216.</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+
+    </main>
+
+    <!--=============== FOOTER ===============-->
+    <footer class="footer section">
+        <div class="footer-container container grid">
+            <div class="footer-content grid">
+                
+                <div class="footer-data">
+                    <h3 class="footer-subtitle">Quick Links</h3>
+                    <ul>         
+                        <li class="footer-item"><a href="index.html" class="footer-link">Home</a></li>
+                        <li class="footer-item"><a href="#collection" class="footer-link">Collection</a></li>
+                        <li class="footer-item"><a href="#company" class="footer-link">Company</a></li>
+                        <li class="footer-item"><a href="#store" class="footer-link">Store</a></li>
+                    </ul>
+                </div>
+            
+               
+                <div class="footer-data">
+                    <h3 class="footer-subtitle">Social Media</h3>
+                    <ul>
+                        <li class="footer-item"><a href="https://www.facebook.com/profile.php?id=100091931209099&mibextid=LQQJ4d" target="_blank" class="footer-link">Facebook</a></li>
+                        <li class="footer-item"><a href="https://instagram.com/dreamland_furniture_and_decor?igshid=YmMyMTA2M2Y=" target="_blank" class="footer-link">Instagram</a></li>
+                    </ul>
+                </div>
+               
+                <div class="footer-data">
+                    <h3 class="footer-subtitle">Information</h3>
+                    <ul>
+                        <li class="footer-item"><a href="#" class="footer-link">Company</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">Terms and Conditions</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">Customer Support</a></li>
+                        <li class="footer-item"><a href="#" class="footer-link">FAQ</a></li>
+                    </ul>
+                </div>
+            </div>
+           
+            <div class="footer-rights">
+                <a href="index.html" class="footer-logo"><img src="./assets/images/Final.png" class="nav-logo-img">Dreamland Furniture</a>
+                <div class="footer-terms">
+                    <a href="https://github.com/mde3" target="_blank" class="footer-terms-link rights-link"> Copyright 2023 &#45; Dreamland Furniture</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="./assets/js/swiper-bundle.min.js"></script>
+    <script src="./assets/js/main.js"></script>
+</body>
+</html>
